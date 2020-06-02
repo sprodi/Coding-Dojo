@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fake Blog</title>
+
+   <style>
+      body {
+         margin: auto;
+         width: 50%;
+         padding: 10px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 18px;
+         line-height: 1.6;
+      }
+      
+      header, img {
+         width: 65%;
+      }
+
+      h1 {
+         font-size: 42px ;
+      }
+
+      table, th, td {
+         border: 3px solid black;
+         border-collapse: collapse;
+         width: 400px;
+      }
+
+      th, td {
+         padding: 10px;
+         text-align: center;
+      }
+
+      tr:nth-child(odd) {
+         background-color: #9999ff;
+      }
+
+      th {
+         background-color: #000099;
+         color: white;
+      }
+
+      input {
+         border: 2px solid black;
+         /* width: 200px; */
+         height: 20px;
+      }
+
+
+      #email {
+         width: 200px;
+      }
+
+      #submit {
+         margin-top: 10px;
+         display: block;
+         float: none;
+         text-align: center;
+         width: 60px;
+         height: 25px;
+      }
+
+   </style>
+</head>
+
+<body> 
+   <header>
+      <h1>Sean Prodi.</h1>
+      <img src="/fake-blog/assets/sean.jpg">
+   </header>
+
+   <div id="main">
+      <p>
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem vitae distinctio, deleniti placeat maxime delectus soluta blanditiis magnam voluptatibus. Assumenda quas ad quis inventore voluptatem quidem accusantium atque debitis laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias odit hic quos iure dolores libero necessitatibus molestiae fuga qui? Quasi dolorum debitis, voluptatem ullam minus nam vel consequatur hic.
+      </p>
+      <p>
+      <table>
+         <h2>Top 5 Numbers from 5 to 1!</h2>
+         <thread>
+            <tr>
+               <th>Number</th>
+               <th>Word</th>
+               <th>Rank</th>
+            </tr>
+         </thread>
+         <tbody>
+            <!-- <tr>
+               <td>10</td>
+               <td>Ten</td>
+               <td>10th</td>
+            </tr>
+            <tr>
+               <td>9</td>
+               <td>Nine</td>
+               <td>9th</td>
+            </tr>
+            <tr>
+               <td>8</td>
+               <td>Eight</td>
+               <td>8th</td>
+            </tr>
+            <tr>
+               <td>7</td>
+               <td>Seven</td>
+               <td>7th</td>
+            </tr>
+            <tr>
+               <td>6</td>
+               <td>Six</td>
+               <td>6th</td>
+            </tr>
+            <tr> -->
+               <td>5</td>
+               <td>Fifth</td>
+               <td>5th</td>
+            </tr>
+            <tr>
+               <td>4</td>
+               <td>Fourth</td>
+               <td>4th</td>
+            </tr>
+            <tr>
+               <td>3</td>
+               <td>Third</td>
+               <td>3rd</td>
+            </tr>
+            <tr>
+               <td>2</td>
+               <td>Second</td>
+               <td>2nd</td>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td>First</td>
+               <td>1st</td>
+            </tr>
+         </tbody>
+      </table>
+      <ul>
+         <li>Bullet 1</li>
+         <li>Bullet 2</li>
+         <li>Bullet 3</li>
+      </ul>
+      <p>
+         <a href="">Click for absolutely nothing!</a>
+      </p>
+      <p>
+         <h3>Bored? Give me your email!</h3>
+         <label for="email">Email:</label>
+         <input type="email" id="email" for="email" name="email">
+      </p>
+      <p>
+         <input type="radio" for="spam" name="spam">
+         <label for="spam">Spam me with mail!</label>&nbsp;
+         <input type="radio" for="spam" name="spam">
+         <label for="nospam">Please don't...</label>
+      </p>
+      <p>
+         <b>Summarize 2020:</b>
+         <br>
+         <input type="checkbox" for="covid">
+         <label for="covid">COVID-19</label>
+         <br>
+         <input type="checkbox" for="protests">
+         <label for="protests">Protests</label>
+         <br>
+         <input type="checkbox" for="dojo">
+         <label for="dojo">Coding-Dojo</label>
+         <br>
+         <input type="submit" value="Submit" id="submit">
+      </p>
+   </div>
+
+</body>
+</html>
