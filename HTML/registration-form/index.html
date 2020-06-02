@@ -13,10 +13,6 @@
          padding: 10px;
       }
 
-      p {
-         text-align: center;
-      }
-
       h1 {
          text-align: center;
       }
@@ -66,10 +62,7 @@
          display: block;
          padding-left: 10%;
          padding-right: 10%;
-         /* background-color: red; */
       }
-
-
       
    </style>
 
@@ -80,48 +73,57 @@
    </header>
    <div id="main">
       <form action="index.html" id="form1">
-         <label for="firstName">First Name:</label>
-         <input type="text" id="firstName" name="firstName"><br><br>
+         <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+         </p>
          
-         <label for="lastName">Last Name:</label>
-         <input type="text" id="lastName" name="lastName"><br><br>
+         <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+         </p>
 
-         <label for="email">Email:</label>
-         <input type="email" id="email" name="email"><br><br>
+         <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+         </p>
 
-         <label for="password">Password:</label>
-         <input type="password" id="password" name="password"><br><br>
+         <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+         </p>
+            <label for="pwConfirm">PW Confirm:</label>
+            <input type="password" id="pwConfirm" name="pwConfirm">
+       
+         <p>
+            <label for="bday">Birthday:</label>
+            <input type="date" id="bday" name="bday">
+         </p>
 
-         <label for="pwConfirm">PW Confirm:</label>
-         <input type="password" id="pwConfirm" name="pwConfirm"><br><br>
-
-         <label for="bday">Birthday:</label>
-         <input type="date" id="bday" name="bday"><br><br>
-
-         <div id="radio">
+         <p>
             <input type="radio" class="gender" name="male">
             <label for="radio-label" class="gender">Male</label>
             <input type="radio" class="gender" name="male">
             <label for="radio-label" class="gender">Female</label>
             <input type="radio" class="gender" name="male">
-            <label for="radio-label" class="gender">Other</label><br>
-         </div>
+            <label for="radio-label" class="gender">Other</label>
+         </p>
 
-         <p>A short description about yourself:
-         <textarea id="description" name="description"></textarea></p>
+         <p>A short description about yourself:</p>
+            <textarea id="description" name="description"></textarea>
 
-         <label for="flang">Favorite Language:</label>
-         <select name="flang">
-            <option value="javascript">JavaScript</option>
-            <option value="css">CSS</option>
-            <option value="other">Other</option>
-        </select><br><br>
-        <input type="submit" value="Submit" id="submit">
+         <p>
+            <label for="flang">Favorite Language:</label>
+            <select name="flang">
+               <option value="javascript">JavaScript</option>
+               <option value="css">Python</option>
+               <option value="other">Other</option>
+            </select>
+            
+         <p>
+            <input type="submit" value="Submit" id="submit">
+         </p>
       </form>
-
-      
-      
-
    </div>
 </body>
 </html>
