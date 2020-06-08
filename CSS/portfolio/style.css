@@ -1,0 +1,131 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body { 
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.3em;
+}
+
+p {
+   padding: 15px 20px 15px 20px;
+}
+
+h2 {
+   background:linear-gradient(rgb(182, 182, 182), rgb(124, 124, 124), rgb(182, 182, 182));
+   font-size: 1.2em;
+   color: white;
+   padding: 15px 20px 15px 20px;
+}
+
+.container {
+   background: radial-gradient(rgb(161, 117, 138), rgb(44, 14, 23));
+   min-height: 1080px;
+   max-width: 1340px;
+   margin: auto;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: rgb(207, 207, 207);
+   min-height: 100px;
+   padding: 5px 25px 5px 25px
+}
+
+.header h2 {
+   background: none;
+   color: black;
+}
+
+.top {
+   display: flex;
+   padding: 10px;
+   height: auto;
+   width: 1320px;
+}
+
+.photo {
+   margin: 15px;
+   padding: 10px;
+   background-color: rgb(139, 139, 139);
+   height: 370px;
+   width: 560px;
+}
+
+.about {
+   margin: 15px;
+   background-color: rgb(238, 238, 238);
+   width: 760px;
+}
+
+.main {
+   display: flex;
+   padding: 10px;
+   height: auto;
+   width: 1320px;
+}
+
+.box {
+   background: linear-gradient(to right, white, rgb(187, 139, 171));
+   margin: 0px 15px 15px 15px;
+   background-color: rgb(238, 238, 238);
+   height: auto;
+   width: 410px;
+}
+
+.text {
+   height: 520px;
+}
+
+.text p {
+   font-size: 0.9em;
+   text-align: justify;
+}
+
+.image {
+   width: 374px;
+   margin: auto;
+   padding: 5px 15px 5px 15px;
+}
+
+.image img {
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px
+}
+
+.button {
+   text-align: center;
+   margin: auto;
+   width: 150px;
+}
+
+button {
+   border-style: solid;
+   border-color: black;
+   border-radius: 10px;
+   color: white;
+   font-weight: 600;
+   background-color: green;
+   margin-bottom: 25px;
+   font-size: 15px;
+   padding: 10px;
+}
+
+.footer {
+   background-color: rgb(238, 238, 238);
+   min-height: 100px;
+   text-align: center;   
+}
+
+.footer img {
+   vertical-align: middle;
+   padding-right: 5px;
+}
+
+.footer a {
+   color: black;
+}
