@@ -22,7 +22,7 @@ h2 {
 .container {
    background: radial-gradient(rgb(161, 117, 138), rgb(44, 14, 23));
    min-height: 1080px;
-   max-width: 1340px;
+   width: 1340px;
    margin: auto;
 }
 
@@ -113,10 +113,6 @@ button {
    margin-bottom: 25px;
    font-size: 15px;
    padding: 10px;
-}
-
-button:hover {
-   cursor: pointer;
 }
 
 .footer {
