@@ -1,0 +1,255 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+a :hover {
+   cursor: pointer;
+}
+
+#container { 
+   width: 95%;
+   height: auto;
+   margin: auto;
+   padding: 15px;
+}
+
+#header img {
+   position: absolute;
+   width: 100px;
+}
+
+#header p {
+   margin-left: 110px;
+   font-weight: 300;
+   font-size: 48px;
+}
+
+#header span {
+   color: rgb(55, 107, 165);
+}
+
+#header {
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   height: 70px
+
+}
+
+#bot-header {
+   background-image: linear-gradient(rgb(55, 87, 129),rgb(55, 107, 165), rgb(55, 87, 129));
+   width: 95%;
+   height: 50px;
+   padding: 10px 36px 0px 10px;
+}
+
+#bot-header h2 {
+   color: white;
+   font-weight: 100;
+   font-size: 32px;
+   padding: 0 10px 10px;
+}
+
+#side {
+   width: 15%;
+   float: left;
+   padding: 10px;
+}
+
+#left-nav {
+   width: 85%;
+   height: auto;
+   padding: 10px 10px 20px 10px;
+   border-bottom: 2px solid rgb(170, 170, 170);
+}
+
+#left-nav h1 {
+   width: 200px;
+   font-size: 16px;
+   margin: 10px 0;
+}
+
+#left-nav h1 span {
+   color: red;
+}
+
+#left-nav p {
+   width: 200px;
+   font-size: 14px;
+   font-weight: 600;
+   margin: 10px 0 20px 0;
+}
+
+#left-nav span {
+   color: rgb(55, 107, 165);
+}
+
+.button1 {
+   background-image: linear-gradient(rgb(55, 107, 165), rgb(55, 87, 129));
+   color: white;
+   height: 30px;
+   width: 200px;
+   font-size: 14px;
+   border-radius: 5px;
+   border-style: none;
+   box-shadow: 2px 2px 2px black;
+   margin-bottom: 5px;
+}
+
+.button2 {
+   background-image: linear-gradient(rgb(255, 166, 0), rgb(221, 99, 17));
+   color: white;
+   height: 30px;
+   width: 200px;
+   font-size: 14px;
+   border-radius: 5px;
+   border-style: none;
+   box-shadow: 2px 2px 2px black;
+   margin-bottom: 5px;
+}
+
+#left-nav-bot {
+   width: 200px;
+   height: auto;
+   padding: 10px 10px 20px 10px;
+}
+
+#left-nav-bot {
+   background-image: url("images/ad_background.png");
+   margin-top: 20px;
+   width: 200px;
+   height: 300px;
+}
+
+#left-nav-bot p {
+   color: white;
+   text-align: center;
+   font-weight: 500;
+   font-size: 24px;
+   margin: 10px 0 0px 0;
+}
+
+#left-nav-bot img {
+   width: 100px;
+   padding: 0 50px 0 50px;
+}
+
+.button3 {
+   background-image: linear-gradient(rgb(0, 217, 255), rgb(17, 146, 221));
+   color: white;
+   height: 30px;
+   width: 200px;
+   font-size: 16px;
+   font-weight: 500;
+   border-radius: 5px;
+   border-style: none;
+   box-shadow: 2px 2px 2px black;
+   margin-bottom: 5px;
+}
+
+.button3 span {
+   font-size: 8px;
+   font-weight: 900;
+   vertical-align: middle;
+   background: -webkit-linear-gradient(left, rgb(100, 198, 255), rgb(255, 255, 255));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+#main {
+   width: 75%;
+   margin-left: 253px;
+   padding: 10px;
+}
+
+#nav {
+   height: 60px;
+   width: 97%;
+   padding: 10px;
+   border-bottom: solid 2px black;
+}
+
+#nav a {
+   text-decoration: none;
+   color: rgb(0, 159, 199);
+}
+
+#nav img {
+   width: 20px;
+   vertical-align: bottom;
+}
+
+#nav-right {
+   float: right;
+   width: 225px;
+   height: 60px;
+}
+
+#nav-right img {
+   float: left;
+   width: 55px;
+   padding-right: 10px;
+}
+
+#nav-right p {
+   font-size: 11px;
+   text-align: center;
+}
+
+#nav-right h2 {
+   font-size: 24px;
+   text-align: center;
+   color: rgb(0, 159, 199);
+}
+
+#content h1 {
+   color: rgb(55, 107, 165);
+   font-size: 22px;
+   padding: 5px 0;
+}
+
+#content a {
+   color: rgb(0, 159, 199);
+   text-decoration: none;
+}
+
+#content .bold {
+   font-weight: bold;
+}
+
+#content .italic {
+   font-style: italic;
+}
+
+#content p, li {
+   margin-bottom: 10px;
+}
+
+#content ul, ol {
+   margin: 0 0 10px 50px;
+}
+
+#content img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 35%;
+   padding: 15px;
+}
+
+#bottom {
+   margin-top: 25px;
+   padding: 15px 15px 15px 0;
+   border: solid 5px rgb(55, 107, 165);
+}
+
+#bottom .html{
+   float: left;
+   width: 15%;
+   padding: 0 20px 0 20px;
+}
