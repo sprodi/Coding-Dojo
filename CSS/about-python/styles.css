@@ -96,6 +96,14 @@ body {
    margin: auto;
 }
 
+#nav a {
+   color: white;
+}
+
+#nav a:hover {
+   color: rgb(255, 196, 0);
+}
+
 #main {
    display: flex;
    height: 315px;
@@ -181,6 +189,11 @@ h2 {
 
 a {
    color: rgb(66, 167, 214);
+   text-decoration: none;
+}
+
+a:hover {
+   color: rgb(23, 39, 56);
    text-decoration: none;
 }
 
