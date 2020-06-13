@@ -40,7 +40,10 @@ body {
    height: 90px;
    float:right;
    margin-right: 10px;
+}
 
+span {
+   color: black;
 }
 
 #search {
@@ -48,6 +51,7 @@ body {
    background-color: rgb(56, 56, 56);
    height: 50px;
    border-radius: 10px;
+   box-shadow: 2px 2px 2px black;
 }
 
 #searcharea {
@@ -94,6 +98,8 @@ body {
    height: 50px;
    width: 850px;
    margin: auto;
+   box-shadow: 2px 2px 2px black;
+
 }
 
 #nav a {
@@ -118,6 +124,22 @@ body {
    width: 290px;
    line-height: 30px;
    padding: 10px;
+}
+
+.left a {
+   color: white;
+   text-decoration: underline;
+}
+
+.left ul li {
+   list-style: none;
+}
+
+.left span {
+   color: rgb(255, 196, 0);
+   font-size: 8px;
+   font-weight: bolder;
+   vertical-align: middle;
 }
 
 .right {
