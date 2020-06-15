@@ -1,0 +1,160 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+}
+
+#container {
+   background-color: rgb(255, 255, 255);
+   width: 1080px;
+   height: 570px;
+   padding: 15px;
+}
+
+#main {
+   display: flex;
+   align-items: top;
+   background-color: rgb(255, 255, 255);
+   color: red;
+   text-align: center;
+   height: 445px;
+}
+
+h2 {
+   color: darkblue;
+   font-size: 16px;
+}
+
+li {
+   font-size: 10px;
+}
+
+.col li {
+   font-size: 14px;
+}
+
+ul li {
+   list-style: none;
+}
+.blank {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   list-style: none;
+   background-color: rgb(255, 255, 255);
+   width: 50px;
+   height: 50px;
+   margin: 5px 0 5px 5px;
+}
+
+.col li {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   list-style: none;
+   background-color: rgb(255, 255, 255);
+   width: 50px;
+   height: 50px;
+   margin: 5px 0 5px 5px;
+}
+
+.bluebox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   list-style: none;
+   background-color: rgb(97, 142, 226);
+   color: black;
+   width: 48px;
+   height: 48px;
+   margin: 5px 0 5px 5px;
+   border: solid 1px black;
+}
+
+#col3 {
+   margin-left: 10px;
+}
+
+.pinkbox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   list-style: none;
+   background-color: rgb(226, 97, 136);
+   color: black;
+   width: 48px;
+   height: 48px;
+   margin: 5px 0 5px 5px;
+   border: solid 1px black;
+}
+
+.orangebox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   list-style: none;
+   background-color: rgb(243, 173, 67);
+   color: black;
+   width: 48px;
+   height: 48px;
+   margin: 5px 0 5px 5px;
+   border: solid 1px black;
+}
+
+#bot1 {
+   display: flex;
+   align-items: top;
+   background-color: rgb(255, 255, 255);
+   color: red;
+   text-align: center;
+   height: 55px;
+   margin-top: 15px;  
+} 
+
+.bot2, .ast {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   list-style: none;
+   background-color: rgb(255, 255, 255);
+   color: rgb(255, 0, 0);
+   width: 10px;
+   height: 50px;
+   margin: 5px -5px 5px 5px;
+}
+
+.title {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   list-style: none;
+   background-color: rgb(255, 255, 255);
+   color: rgb(255, 0, 0);
+   width: 160px;
+   height: 50px;
+   margin: 5px 0 5px 5px;
+}
+
+.greenbox {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   list-style: none;
+   background-color: rgb(46, 190, 42);
+   color: black;
+   width: 48px;
+   height: 48px;
+   margin: 5px 0 5px 5px;
+   border: solid 1px black;
+}
+
+#bot2 {
+   display: flex;
+   align-items: top;
+   background-color: rgb(255, 255, 255);
+   color: red;
+   text-align: center;
+   height: 60px;
+   margin-bottom: 15px;  
+} 
