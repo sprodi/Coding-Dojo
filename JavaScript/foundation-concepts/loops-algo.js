@@ -16,5 +16,24 @@ for(var x = 0; x < array.length; x++) {
       console.log('Num:'+ array[x]);
       console.log('Sum:'+ sum);
 }
+
+/* I updated "x" and "Sum" below to keep track of their values while inputing their values when console.logged. 
+x = 4
+Sum = 10
+
+Sum = 10 + 5
+
+Num: 1
+Sum: 1
+Num: 2
+Sum: 3
+Num: 3
+Sum: 6
+Num: 4
+Sum: 10
+Num: 5
+Sum: 15
+*/
+
 //This took me longer than I excepted to figure out.
 //Output: Num: 1, Sum: 1, Num: 2, Sum: 3, Num: 3, Sum: 6, Num: 4, Sum: 10, Num: 5, Sum: 15
