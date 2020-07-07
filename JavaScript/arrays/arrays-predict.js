@@ -1,9 +1,11 @@
 //Predict 1:
 var arr = [8,6,7,5,3,0,9]
-for(var i = 0; i < arr.length; i++){    
+for(var i = 0; i < arr.length; i++){ 
+// if i = 0 and i is less than 7 then add 1 to i
     console.log(arr[i]);
 }
-//Output: 8,6,7,5,3,0,9 (lol jenny)
+//Output: 8,6,7,5,3,0,9 
+//Side note, lol Jenny's number
 
 //Predict 2:
 var arr = [7,3,8,4,2,0,1];
