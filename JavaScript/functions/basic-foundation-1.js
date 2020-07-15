@@ -57,7 +57,7 @@ function findMax(num) {
 // console.log(findMax([-3,3,5,7])); 
 // console.log(findMax([1,92,13,4])); 
 
- // Find average - Given an array with multiple values, write a function that returns the average of the values in the array. (e.g. for [1,3,5,7,20] average is 7.2)
+// Find average - Given an array with multiple values, write a function that returns the average of the values in the array. (e.g. for [1,3,5,7,20] average is 7.2)
 function findAvg(num) {
    var avg = 0;
    var sum = 0;
@@ -70,7 +70,7 @@ function findAvg(num) {
 // console.log(findAvg([1,3,5,7,20])); 
 // console.log(findAvg([5,10,15]));
 
- // Array odd - Write a function that would return an array of all the odd numbers between 1 to 50. (ex. [1,3,5, .... , 47,49]). Hint: Use 'push' method.
+// Array odd - Write a function that would return an array of all the odd numbers between 1 to 50. (ex. [1,3,5, .... , 47,49]). Hint: Use 'push' method.
  function arrayOdd() {
    var newArray = [];
    for(var i = 1; i < 50; i+=2) {
@@ -94,7 +94,7 @@ function greaterThan(arr, y) {
  }
 // console.log(greaterThan([1,3,5,7], 3)); 
  
- // Given an array with multiple values, write a function that replaces each value in the array with the value squared by itself. (e.g. [1,5,10,-2] will become [1,25,100,4])
+// Given an array with multiple values, write a function that replaces each value in the array with the value squared by itself. (e.g. [1,5,10,-2] will become [1,25,100,4])
 function squareArr(arr) {
    for(var i = 0; i < arr.length; i++) {
      arr[i] *= arr[i];
@@ -139,8 +139,8 @@ function maxMin(arr) {
    newArr.push(avg);
    return newArr;
  }
-//  console.log(maxMin([1,5,10,-2]))
-//  console.log(maxMin([2,4,8,6]))
+// console.log(maxMin([1,5,10,-2]))
+// console.log(maxMin([2,4,8,6]))
  
 // Swap Values - Write a function that will swap the first and last values of any given array. The default minimum length of the array is 2. (e.g. [1,5,10,-2] will become [-2,5,10,1]).
 function swapVal(arr) {
@@ -155,8 +155,8 @@ function swapVal(arr) {
    }
    return arr;
  }
-//  console.log(swapVal([1,5,10,-2]))
-//  console.log(swapVal([1,13,19,92]))
+// console.log(swapVal([1,5,10,-2]))
+// console.log(swapVal([1,13,19,92]))
 
  // Number to String - Write a function that takes an array of numbers and replaces any negative values within the array with the string 'Dojo'. For example if array = [-1,-3,2], your function will return ['Dojo','Dojo',2].
 function numStr(arr) {
@@ -167,6 +167,6 @@ function numStr(arr) {
    }
    return arr;
  }
-//  console.log(numStr([-1,-3,2]))
-//  console.log(numStr([-1,13,-19,92]))
+// console.log(numStr([-1,-3,2]))
+// console.log(numStr([-1,13,-19,92]))
  
