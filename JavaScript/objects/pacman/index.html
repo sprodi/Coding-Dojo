@@ -25,12 +25,12 @@
          background-color: blue;
       }
       div.coin {
-         background: url('coin.gif');
+         background: url('_assets/coin.gif');
          background-repeat: no-repeat;
          background-position: center;
       }
       div.cherry {
-         background: url('cherry.png');
+         background: url('_assets/cherry.png');
          background-repeat: no-repeat;
          background-position: center;
          background-size: 20px;
@@ -39,7 +39,7 @@
 
       }
       div#pacman {
-         background: url('pacman-right.gif');
+         background: url('_assets/pacman-right.gif');
          background-repeat: no-repeat;
          background-position: center;
          background-size: cover;
@@ -49,7 +49,7 @@
       }
 
       div#pacman2 {
-         background: url('pacman2-left.gif');
+         background: url('_assets/pacman2-left.gif');
          background-repeat: no-repeat;
          background-position: center;
          background-size: cover;
@@ -59,7 +59,7 @@
       }
 
       div#ghost {
-         background: url('ghost-left.gif');
+         background: url('_assets/ghost-left.gif');
          background-repeat: no-repeat;
          background-position: center;
          background-size: cover;
@@ -286,7 +286,7 @@
       function displayPacman(){
          document.getElementById('pacman').style.top = pacman.y*20+"px";
          document.getElementById('pacman').style.left = pacman.x*20+"px";
-         document.getElementById('pacman').style.backgroundImage = "url('pacman-"+direction+".gif')";
+         document.getElementById('pacman').style.backgroundImage = "url('_assets/pacman-"+direction+".gif')";
       }
       var direction2 = 'left';
 
@@ -294,7 +294,7 @@
 
          document.getElementById('pacman2').style.top = pacman2.y*20+"px";
          document.getElementById('pacman2').style.left = pacman2.x*20+"px";
-         document.getElementById('pacman2').style.backgroundImage = "url('pacman2-"+direction2+".gif')";
+         document.getElementById('pacman2').style.backgroundImage = "url('_assets/pacman2-"+direction2+".gif')";
 
       }
       var direction = 'left';
@@ -302,7 +302,7 @@
       function displayGhost(){
          document.getElementById('ghost').style.top = ghost.y*20+"px";
          document.getElementById('ghost').style.left = ghost.x*20+"px";
-         document.getElementById('ghost').style.backgroundImage = "url('ghost-"+direction+".gif')";
+         document.getElementById('ghost').style.backgroundImage = "url('_assets/ghost-"+direction+".gif')";
       }
       
       function displayScore(){
