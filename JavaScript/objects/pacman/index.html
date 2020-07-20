@@ -39,7 +39,7 @@
 
       }
       div#pacman {
-         background: url('_assets/pacman-right.gif');
+         background: url('_assets/pacman.gif');
          background-repeat: no-repeat;
          background-position: center;
          background-size: cover;
@@ -49,7 +49,8 @@
       }
 
       div#pacman2 {
-         background: url('_assets/pacman2-left.gif');
+         background: url('_assets/pacman2.gif');
+         transform: scaleX(-1);
          background-repeat: no-repeat;
          background-position: center;
          background-size: cover;
@@ -228,13 +229,13 @@
       var world = [
          [2,2,2,2,2,2,2,2,2,2],
          [2,0,1,1,1,1,1,1,3,2],
-         [2,2,2,1,2,2,1,2,2,2],
-         [2,3,1,1,1,2,1,1,3,2],
-         [2,1,2,2,1,2,1,2,1,2],
-         [2,1,2,0,1,1,3,2,1,2],
+         [2,1,2,1,2,2,1,2,1,2],
+         [2,1,1,1,1,1,1,1,1,2],
+         [2,1,2,2,1,1,2,2,1,2],
+         [2,1,2,0,0,0,0,2,1,2],
          [2,1,2,2,2,2,2,2,1,2],
-         [2,1,1,1,1,1,1,1,3,2],
-         [2,1,2,2,2,2,2,2,2,2],
+         [2,1,1,1,3,3,1,1,1,2],
+         [2,1,2,1,2,2,1,2,1,2],
          [2,3,1,1,1,1,1,1,0,2],
          [2,2,2,2,2,2,2,2,2,2]
       ];
@@ -281,28 +282,22 @@
          // console.log(output);
          document.getElementById('world').innerHTML = output;
       }
-      var direction = 'right';
+
 
       function displayPacman(){
          document.getElementById('pacman').style.top = pacman.y*20+"px";
          document.getElementById('pacman').style.left = pacman.x*20+"px";
-         document.getElementById('pacman').style.backgroundImage = "url('_assets/pacman-"+direction+".gif')";
       }
-      var direction2 = 'left';
 
       function displayPacman2(){
 
          document.getElementById('pacman2').style.top = pacman2.y*20+"px";
          document.getElementById('pacman2').style.left = pacman2.x*20+"px";
-         document.getElementById('pacman2').style.backgroundImage = "url('_assets/pacman2-"+direction2+".gif')";
-
       }
-      var direction = 'left';
 
       function displayGhost(){
          document.getElementById('ghost').style.top = ghost.y*20+"px";
          document.getElementById('ghost').style.left = ghost.x*20+"px";
-         document.getElementById('ghost').style.backgroundImage = "url('_assets/ghost-"+direction+".gif')";
       }
       
       function displayScore(){
@@ -327,19 +322,19 @@
       document.onkeydown = function(e){
          if(e.keyCode == 37 && world[pacman.y][pacman.x-1] != 2){
             pacman.x--;
-            direction = 'left';
+            document.getElementById('pacman').style.transform = "scaleX(-1)";
          }
          else if (e.keyCode == 39 && world[pacman.y][pacman.x+1] != 2){
             pacman.x++;
-            direction = 'right';
+            document.getElementById('pacman').style.transform = "rotate(0deg)";
          }
          else if (e.keyCode == 38 && world[pacman.y-1][pacman.x] != 2){
             pacman.y--;
-            direction = 'up';
+            document.getElementById('pacman').style.transform = "rotate(-90deg)";
          }
          else if (e.keyCode == 40 && world[pacman.y+1][pacman.x] != 2){
             pacman.y++;
-            direction = 'down';
+            document.getElementById('pacman').style.transform = "rotate(90deg)";
          }
          if(world[pacman.y][pacman.x] == 1){
             world[pacman.y][pacman.x] = 0;
@@ -361,19 +356,19 @@
 
          if(e.keyCode == 65 && world[pacman2.y][pacman2.x-1] != 2){
             pacman2.x--;
-            direction2 = 'left';
+            document.getElementById('pacman2').style.transform = "scaleX(-1)";
          }
          else if (e.keyCode == 68 && world[pacman2.y][pacman2.x+1] != 2){
             pacman2.x++;
-            direction2 = 'right';
+            document.getElementById('pacman2').style.transform = "scaleX(1)";
          }
          else if (e.keyCode == 87 && world[pacman2.y-1][pacman2.x] != 2){
             pacman2.y--;
-            direction2 = 'up';
+            document.getElementById('pacman2').style.transform = "rotate(-90deg)";
          }
          else if (e.keyCode == 83 && world[pacman2.y+1][pacman2.x] != 2){
             pacman2.y++;
-            direction2 = 'down';
+            document.getElementById('pacman2').style.transform = "rotate(90deg)";
          }
          if(world[pacman2.y][pacman2.x] == 1){
             world[pacman2.y][pacman2.x] = 0;
@@ -393,7 +388,7 @@ A 65
 S 83
 D 68
 */
-         console.log(e.keyCode);
+         // console.log(e.keyCode);
          displayPacman();
          displayPacman2();
       }
