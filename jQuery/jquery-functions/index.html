@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #container {
+      width: 50%;
+      margin: auto;
+    }
+
+    #click, #hide, #show, #toggle, #slideDown, #slideUp, #slideToggle, #fadeIn, #fadeOut, #addClass, #before, #after, #append, #html, #attr, #val, #text {
+      /* background-color: red; */
+      display: flex;
+      margin: 25px;
+      padding: 10px;
+      border-bottom: 2px solid black;
+    }
+    .button {
+      /* background-color: yellow; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+    }
+    .text {
+      /* background-color: rgb(162, 162, 255); */
+      width: 100%; /*can be in percentage also.*/
+      height: auto;
+      margin: 0 auto;
+      padding: 15px;
+      position: relative;
+      text-align: center;
+    }
+    .newClass {
+      background-color: red;
+      color: white;
+    }
+    .name {
+      color: red;
+    }
+    button {
+      width: 200px;
+      height: 50px;
+      font-size: 1.5em;
+      font-weight: 800;
+      background-color: rgb(235, 235, 235);
+    }
+    h1 {
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+    #reset {
+      margin: 20px 0 0 50px;
+      display: flex;
+      float: left;
+      position: fixed;
+    }
+
+    #reset, button {
+      height: 85px;
+    }
+
+  </style>
+
+  <script>
+    $(document).ready(function() {
+      console.log('document is ready!')
+      $('#click button').click(function(){
+        alert('Button was clicked!')
+      })
+      
+      $('#hide button').click(function(){
+        $('#hide p').hide();
+        console.log('Paragraph was hidden!')
+      })
+
+      $('#show button').click(function(){
+        $('#show p').show();
+        console.log('Paragraph was shown!')
+      })
+
+      $('#toggle button').click(function(){
+        $('#toggle p').toggle();
+        console.log('Paragraph was toggled!')
+      })
+
+      $('#slideDown button').click(function(){
+        $('#slideDown p').slideDown('slow', function(){
+          console.log('Paragraph was slid!')
+        })
+      })
+
+      $('#slideUp button').click(function(){
+        $('#slideUp p.slideUp').slideUp('slow', function(){
+          console.log('Paragraph was slid!')
+        })
+      })
+
+      $('#slideToggle button').click(function(){
+        $('#slideToggle p.slideToggle').slideToggle('slow', function(){
+          console.log('Paragraph was slid!')
+        })
+      })
+
+      $('#fadeIn button').click(function(){
+        $('#fadeIn p.fadeIn').fadeIn('slow', function(){
+          console.log('Paragraph faded in!')
+        })
+      })
+
+      $('#fadeOut button').click(function(){
+        $('#fadeOut p.fadeOut').fadeOut('slow', function(){
+          console.log('Paragraph faded out!')
+        })
+      })
+
+      $('#addClass button').click(function(){
+        $('#addClass p.addClass').last().addClass('newClass');
+          console.log('Paragraph has new class tag!')
+      })
+
+      $('#before button').click(function(){
+        $('#before p.before').before('Sean');
+          console.log('Paragraph added "Sean" before it.')
+      })
+      
+      $('#after button').click(function(){
+        $('#after p.after').after('Prodi');
+          console.log('Paragraph added "Prodi" after it.')
+      })
+
+      $('#append button').click(function(){
+        $('#append p.append').append(' <b> Prodi</b>');
+          console.log('Paragraph added "Prodi" at the end of it.')
+      })
+
+      $('#html button').click(function(){
+        $('#html p.html').html('<b>This html replaced the original paragraph!');
+          console.log('HTML was added to paragraph!')
+      })
+
+      $('#attr button').click(function(){
+      var title = $( 'em' ).attr( 'title' );
+      $( '.name' ).text( title );
+        console.log('attr has been selected!')
+      })
+
+      $( '#val button' ).click(function() {
+      var text = $( this ).text();
+      $( 'input' ).val( text );
+        console.log('val was fed to the input!')
+      })
+
+      $('#text button').click(function(){
+        $('#text p.newText').text('<b>This</b> is a new paragraph');
+      })
+    });
+  </script>
+
+</head>
+
+<body>
+  <div id='reset'>
+    <a href="javascript:window.location.reload();"><button>Reset Everything</button></a>
+  </div>
+  <div id='container'>
+    <div id='click'>
+      <div class='button'>
+        <button>Click</button>
+      </div>
+      <div class='text'>
+        <h1>Click</h1>
+        <p>Click the button to trigger .click.</p>  
+      </div>
+    </div>
+
+    <div id='hide'>
+      <div class='button'>
+        <button>Hide</button>
+      </div>
+      <div class='text'>
+        <h1>Hide</h1>
+        <p>Click the button to hide paragraph</p>  
+      </div>
+    </div>
+
+    <div id='show'>
+      <div class='button'>
+        <button>Show</button>
+      </div>
+      <div class='text'>
+        <h1>Show</h1>
+        <p>Click the button to show paragraph</p>  
+        <p style="display: none">This paragraph was shown!</p>  
+      </div>
+    </div>
+
+    <div id='toggle'>
+      <div class='button'>
+        <button>Toggle</button>
+      </div>
+      <div class='text'>
+        <h1>Toggle</h1>
+        <p>Click the button to toggle the paragraph!</p>  
+      </div>
+    </div>
+
+    <div id='slideDown'>
+      <div class='button'>
+        <button>slideDown</button>
+      </div>
+      <div class='text'>
+        <h1>slideDown</h1>
+        <p>Click the button to slide the paragraph down!</p>
+        <p style='display: none'>This paragraph slid down!<br>This paragraph slid down!<br>This paragraph slid down!</p> 
+      </div>
+    </div>
+    
+    <div id='slideUp'>
+      <div class='button'>
+        <button>slideUp</button>
+      </div>
+      <div class='text'>
+        <h1>slideUp</h1>
+        <p>Click the button to slide the paragraph up!</p>
+        <p class='slideUp'>This paragraph will slide up!<br>This paragraph will slide up!<br>This paragraph will slide up!</p> 
+      </div>
+    </div>
+
+    <div id='slideToggle'>
+      <div class='button'>
+        <button>slideToggle</button>
+      </div>
+      <div class='text'>
+        <h1>slideToggle</h1>
+        <p>Click the button to slide toggle the paragraph!</p>
+        <p class='slideToggle'>This paragraph will slide!<br>This paragraph will slide!<br>This paragraph will slide!</p> 
+      </div>
+    </div>
+
+    <div id='fadeIn'>
+      <div class='button'>
+        <button>fadeIn</button>
+      </div>
+      <div class='text'>
+        <h1>fadeIn</h1>
+        <p>Click the button to fade in the paragraph!</p>
+        <p style='display: none' class='fadeIn'>This paragraph will fade in!<br>This paragraph will fade in!<br>This paragraph will fade in!</p> 
+      </div>
+    </div>
+
+    <div id='fadeOut'>
+      <div class='button'>
+        <button>fadeOut</button>
+      </div>
+      <div class='text'>
+        <h1>fadeOut</h1>
+        <p>Click the button to fade in the paragraph!</p>
+        <p class='fadeOut'>This paragraph will fade out!<br>This paragraph will fade out!<br>This paragraph will fade out!</p> 
+      </div>
+    </div>
+
+    <div id='addClass'>
+      <div class='button'>
+        <button>addClass</button>
+      </div>
+      <div class='text'>
+        <h1>addClass</h1>
+        <p>Click the button to add a class to the paragraph!</p>
+        <p class='addClass'>This paragraph will have a new class!</p> 
+      </div>
+    </div>
+
+    <div id='before'>
+      <div class='button'>
+        <button>before</button>
+      </div>
+      <div class='text'>
+        <h1>before</h1>
+        <p>Click the button add "Sean" before the paragraph!</p>
+        <p class='before'>This paragraph will have my name before it!</p> 
+      </div>
+    </div>
+
+    <div id='after'>
+      <div class='button'>
+        <button>after</button>
+      </div>
+      <div class='text'>
+        <h1>after</h1>
+        <p>Click the button add "Prodi" after the paragraph!</p>
+        <p class='after'>This paragraph will have my last name after it!</p> 
+      </div>
+    </div>
+
+    <div id='append'>
+      <div class='button'>
+        <button>append</button>
+      </div>
+      <div class='text'>
+        <h1>append</h1>
+        <p>Click the button add "Prodi" at the end of the paragraph!</p>
+        <p class='append'>This paragraph will have my last name at the end of it!</p> 
+      </div>
+    </div>
+
+    <div id='html'>
+      <div class='button'>
+        <button>html</button>
+      </div>
+      <div class='text'>
+        <h1>html</h1>
+        <p>Click the button add html to paragraph</p>
+        <p class='html'>This is a paragraph.</p> 
+      </div>
+    </div>
+
+    <div id='val'>
+      <div class='button'>
+        <button>val</button>
+      </div>
+      <div class='text'>
+        <h1>val</h1>
+        <p>Click the button to feed "val" to the input</p>
+        <input type='text' value='click the button'>
+      </div>
+    </div>
+
+    <div id='text'>
+      <div class='button'>
+        <button>text</button>
+      </div>
+      <div class='text'>
+        <h1>text</h1>
+        <p>Click the button to change the paragraph.</p>
+        <p class='newText'>This is a paragraph</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
