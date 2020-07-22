@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <style type="text/css">
+   * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   #container {
+      margin: 50px, auto;
+      padding: 50px;
+      width: 100%
+   }
+   #boxContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 15px auto;
+      padding-bottom: 15px;
+      width: 2470px;
+      height: 1140px;
+      overflow: hidden;
+   }
+   #header {
+      margin: auto;
+      padding: 15px;
+      width: 2440px;
+		height: auto;
+      background-repeat: no-repeat;
+      align-content: center;
+   }
+   #footer {
+      margin: auto;
+      padding: 15px;
+      width: 2440px;
+		height: auto;
+   }
+   .box {
+      background-color: rgb(92, 92, 92);
+      background-image: url('/disappearing-ninja/yoda.png');
+      background-position:-125px -20px;
+      width: 550px;
+		height: 550px;
+      background-repeat: no-repeat;
+   }
+   h1 {
+      font-size: 3em;
+   }
+   h2 {
+      font-size: 2em;
+   }
+   button {
+      color: white;
+      width: 200px;
+      height: 60px;
+      font-size: 1.5em;
+      font-weight: 800;
+      border-radius: 10px;
+      border: 1px black solid;
+      box-shadow: 5px 5px rgb(0, 0, 0);
+      background-color: rgb(0, 192, 80);
+    }
+   </style>
+
+   <script>
+      $(document).ready(function() {
+      console.log('document is ready!')
+
+         $('.box').click(function(){
+            $(this).hide(function(){
+               console.log('Box was clicked!')
+            })
+         })
+      });
+   </script>
+
+</head>
+<body>
+   
+   <div id='container'>
+      <div id='header'>
+         <h1>jQuery - Assignment 1</h1>
+         <h2>The Disappearing Child</h2>
+      </div>
+      <div id='boxContainer'>
+         <div class='box'></div>
+         <div class='box'></div>
+         <div class='box'></div>
+         <div class='box'></div>
+         <div class='box'></div>
+         <div class='box'></div>
+         <div class='box'></div>
+         <div class='box'></div>
+      </div>
+      <div id='footer'>
+         <a href="javascript:window.location.reload();"><button>Restore</button></a>
+      </div>
+   </div>
+
+
+</body>
+</html>
