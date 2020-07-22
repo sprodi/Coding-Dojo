@@ -79,12 +79,19 @@
    </style>
 
    <script>
+      var HTMLstring ='';
+      for(var i = 0; i < 8; i++){
+         HTMLstring += '<div class="box"></div>'
+      }
+
       $(document).ready(function () {
          console.log('document is ready!')
+         $('#boxContainer').append(HTMLstring)
 
          $('.box').click(function () {
             $(this).hide('slow')
          })
+
          $('button').click(function () {
             $('.box').show('slow')
          })
@@ -101,14 +108,14 @@
          <h2>The Disappearing Child</h2>
       </div>
       <div id='boxContainer'>
+         <!-- <div class='box'></div>
          <div class='box'></div>
          <div class='box'></div>
          <div class='box'></div>
          <div class='box'></div>
          <div class='box'></div>
          <div class='box'></div>
-         <div class='box'></div>
-         <div class='box'></div>
+         <div class='box'></div> -->
       </div>
       <div id='footer'>
          <button>Restore</button>
