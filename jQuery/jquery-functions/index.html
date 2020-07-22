@@ -70,8 +70,22 @@
       position: fixed;
     }
 
-    #reset, button {
-      height: 85px;
+    #reset a {
+      display: flex;
+      width: 120px;
+      height: 55px;
+      font-size: 1em;
+      font-weight: 800;
+      background-color: rgb(8, 141, 41);
+      color: white;
+      border: .25px black solid;
+      border-radius: 5px;
+      box-shadow: 5px 5px black;
+      text-align: center;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
     }
 
   </style>
@@ -175,7 +189,7 @@
 
 <body>
   <div id='reset'>
-    <a href="javascript:window.location.reload();"><button>Reset Everything</button></a>
+    <a href="javascript:window.location.reload();">Reset Everything</a>
   </div>
   <div id='container'>
     <div id='click'>
