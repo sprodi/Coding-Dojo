@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ninja to Cat</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <style>
+      #container {
+         background-color: antiquewhite;
+         width: 500px;
+         height: auto;
+         padding: 20px;
+      }
+
+      img {
+         width: 500px;
+      }
+   </style>
+
+   <script>
+      $(document).ready(function(){
+         console.log('document is ready!')
+
+         $('img').click(function(){ 
+            //when image is clicked...
+
+            $(this).attr('temp', $(this).attr('src'));
+            /* example ninja0
+            ninja0 ('temp' is now '_assets/ninja0.png')
+
+            <img src='_assets/ninja0.png' data-alt-src='_assets/cat0.png' temp='_assets/ninja0.png'>
+            */
+
+            $(this).attr('src', $(this).attr('data-alt-src'));
+            /*
+            ninja0 ('src' is now '_assets/cat0.png')
+
+            <img src='_assets/cat0.png' data-alt-src='_assets/cat0.png' temp='_assets/ninja0.png'>
+            */
+
+            $(this).attr('data-alt-src', $(this).attr('temp'));
+            /*
+            ninja0 ('data-alt-src' is now '_assets/ninja0')
+
+            <img src='_assets/cat0.png' data-alt-src='_assets/ninja0.png' temp='_assets/ninja0.png'>
+            */
+         })
+      });
+
+   </script>
+</head>
+<body>
+   <div id='container'>
+      <img src='_assets/ninja0.png' data-alt-src='_assets/cat0.png' temp=''>
+      <img src='_assets/ninja1.png' data-alt-src='_assets/cat1.png' temp=''>
+      <img src='_assets/ninja2.png' data-alt-src='_assets/cat2.png' temp=''>
+      <img src='_assets/ninja3.png' data-alt-src='_assets/cat3.png' temp=''>
+      <img src='_assets/ninja4.png' data-alt-src='_assets/cat4.png' temp=''>
+   </div>
+</body>
+</html>
