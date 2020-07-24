@@ -13,7 +13,7 @@
       }
    </style>
 
-   <script>
+  <!-- <script>
       $( document ).ready( function (){
          console.log( 'Doc is ready!' )
          $( 'img' ).hover( function (){
@@ -23,11 +23,22 @@
             $( this ).attr('alt-src', $( this ).attr( 'temp' ));
          });
       });
-   </script>
+   </script> -->
 
-
-
+<!-- Second Attmpt -->
+<script>
+   $( document ).ready( function (){
+      console.log( 'Doc is ready!' )
+      $( 'img' ).hover( function (){
+         // console.log('img has been hovered');
+         var temp = $( this ).attr( 'src' );
+         $( this ).attr('src', $( this ).attr( 'alt-src' ));
+         $( this ).attr('alt-src', temp);
+      });
+   });
+</script>
 </head>
+
 <body>
    <img src='/_assets/red-kyber-01.jpg' alt-src='/_assets/red-kyber-02.jpg' temp=''>
    <img src='/_assets/green-kyber-01.jpg' alt-src='/_assets/green-kyber-02.jpg' temp=''>
