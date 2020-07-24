@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hover In and Out</title>
+   <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+   <style>
+      img {
+         width: 35%;
+         margin: 10px;
+      }
+   </style>
+
+   <script>
+      $( document ).ready( function (){
+         console.log( 'Doc is ready!' )
+         $( 'img' ).hover( function (){
+            // console.log('img has been hovered');
+            $( this ).attr('temp', $( this ).attr( 'src' ));
+            $( this ).attr('src', $( this ).attr( 'alt-src' ));
+            $( this ).attr('alt-src', $( this ).attr( 'temp' ));
+         });
+      });
+   </script>
+
+
+
+</head>
+<body>
+   <img src='/_assets/red-kyber-01.jpg' alt-src='/_assets/red-kyber-02.jpg' temp=''>
+   <img src='/_assets/green-kyber-01.jpg' alt-src='/_assets/green-kyber-02.jpg' temp=''>
+   <img src='/_assets/blue-kyber-01.jpg' alt-src='/_assets/blue-kyber-02.jpg' temp=''>
+   <img src='/_assets/yellow-kyber-01.jpg' alt-src='/_assets/yellow-kyber-02.jpg' temp=''>
+</body>
+</html>
