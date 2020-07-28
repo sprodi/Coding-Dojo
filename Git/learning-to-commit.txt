@@ -1,0 +1,40 @@
+sean@Seans-MacBook-Pro desktop % mkdir test
+sean@Seans-MacBook-Pro desktop % cd test
+sean@Seans-MacBook-Pro test % touch 'index.html' 'styles.css'
+sean@Seans-MacBook-Pro test % git init
+Initialized empty Git repository in /Users/sean/Desktop/test/.git/
+sean@Seans-MacBook-Pro test % git add 'index.html' 'styles.css'
+sean@Seans-MacBook-Pro test % git commit -m 'Updated HTML'
+[master (root-commit) e9e5439] Updated HTML
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+sean@Seans-MacBook-Pro test % git commit -m 'Updated CSS'
+On branch master
+Changes not staged for commit:
+	modified:   index.html
+	modified:   styles.css
+
+no changes added to commit
+sean@Seans-MacBook-Pro test % git add .
+sean@Seans-MacBook-Pro test % git commit -m 'Updated CSS'
+[master 0054a9e] Updated CSS
+ 2 files changed, 19 insertions(+)
+sean@Seans-MacBook-Pro test % git log
+commit 0054a9e652483d92abc765eba81bec2581488cdb (HEAD -> master)
+Author: Sprodi <seanprodi@gmail.com>
+Date:   Tue Jul 28 10:56:03 2020 -0700
+
+    Updated CSS
+
+commit e9e54396c2542579e93a27538e2a806bcce511aa
+Author: Sprodi <seanprodi@gmail.com>
+Date:   Tue Jul 28 10:54:46 2020 -0700
+
+    Updated HTML
+sean@Seans-MacBook-Pro test % git reset e9e543 --hard
+HEAD is now at e9e5439 Updated HTML
+sean@Seans-MacBook-Pro test % git add .
+sean@Seans-MacBook-Pro test % git commit -m 'Updated CSS'
+[master 7f4648c] Updated CSS
+ 1 file changed, 8 insertions(+)
