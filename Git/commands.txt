@@ -1,0 +1,20 @@
+sean@Seans-MacBook-Pro ~ % cd desktop
+sean@Seans-MacBook-Pro desktop % mkdir test
+sean@Seans-MacBook-Pro desktop % cd test
+sean@Seans-MacBook-Pro test % touch index.html
+sean@Seans-MacBook-Pro test % touch styles.css
+sean@Seans-MacBook-Pro test % touch commands.txt
+sean@Seans-MacBook-Pro test % cp index.html index_2.html
+sean@Seans-MacBook-Pro test % cd ..
+sean@Seans-MacBook-Pro desktop % mkdir destination
+sean@Seans-MacBook-Pro desktop % cd test
+sean@Seans-MacBook-Pro test % mv index_2.html ../destination/index_2.html
+sean@Seans-MacBook-Pro test % rm styles.css
+sean@Seans-MacBook-Pro test % ls
+commands.txt	index.html
+sean@Seans-MacBook-Pro test % cd ../destination
+sean@Seans-MacBook-Pro destination % ls
+index_2.html
+sean@Seans-MacBook-Pro destination % cd ..
+sean@Seans-MacBook-Pro desktop % rm -rf destination
+sean@Seans-MacBook-Pro desktop % cat commands.txt
