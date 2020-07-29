@@ -1,0 +1,19 @@
+sean@Seans-MacBook-Pro GitHub % mkdir basic_repo
+sean@Seans-MacBook-Pro GitHub % cd basic_repo
+sean@Seans-MacBook-Pro basic_repo % git init
+Initialized empty Git repository in /Users/sean/Documents/GitHub/basic_repo/.git/
+sean@Seans-MacBook-Pro basic_repo % touch README.md
+sean@Seans-MacBook-Pro basic_repo % git add README.md
+sean@Seans-MacBook-Pro basic_repo % git commit -m 'initial commit'
+[master (root-commit) 3cd4f75] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+sean@Seans-MacBook-Pro basic_repo % git remote add basic_repo https://github.com/sprodi/basic_repo.git
+sean@Seans-MacBook-Pro basic_repo % git push basic_repo master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 230 bytes | 230.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/sprodi/basic_repo.git
+ * [new branch]      master -> master
+sean@Seans-MacBook-Pro basic_repo % 
