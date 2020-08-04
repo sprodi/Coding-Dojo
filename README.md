@@ -1,5 +1,5 @@
 # Coding-Dojo
-<em>01 WEB-FUND</em>
+<strong>01 WEB-FUND</strong>
    <br>====================<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS
    <br>
@@ -14,4 +14,4 @@
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jQuery
 
 
-<em>02 PYTHON</em>
+<strong>02 PYTHON</strong>
