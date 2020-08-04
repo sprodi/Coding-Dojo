@@ -1,17 +1,17 @@
 # Coding-Dojo
 01 WEB-FUND
 
-   CSS
+   &nbsp;&nbsp;&nbsp;&nbsp;CSS
 
-   HTML
+   &nbsp;&nbsp;&nbsp;&nbsp;HTML
 
-   Intro-to-Web-Dev
+   &nbsp;&nbsp;&nbsp;&nbsp;Intro-to-Web-Dev
 
-   Javascript
+   &nbsp;&nbsp;&nbsp;&nbsp;Javascript
 
-   Pre-Bootcamp
-   
-   jQuery
+   &nbsp;&nbsp;&nbsp;&nbsp;Pre-Bootcamp
+
+   &nbsp;&nbsp;&nbsp;&nbsp;jQuery
 
 
 02 PYTHON
