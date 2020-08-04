@@ -1,0 +1,11 @@
+02-PYTHON
+|-- my_environments
+|-- _python
+ |-- python_fundamentals
+ |-- OOP
+|-- mysql
+|-- django
+ |-- django_fundamentals
+ |-- django_orm
+ |-- django_full_stack
+ |-- django_extras
