@@ -59,7 +59,3 @@ z.make_withdrawal(100)
 z.make_withdrawal(100)
 print(z.display_user_balance())
 print()
-
-# print(x.username)
-# print(y.username)
-# print(z.username)
