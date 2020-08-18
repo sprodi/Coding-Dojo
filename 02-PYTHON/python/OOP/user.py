@@ -40,7 +40,7 @@ x.make_deposit(500)
 x.make_deposit(200)
 x.make_deposit(50)
 x.make_withdrawal(150)
-x.transfer_money(z, 700)
+
 print(x.display_user_balance())
 print()
 
@@ -59,3 +59,8 @@ z.make_withdrawal(100)
 z.make_withdrawal(100)
 print(z.display_user_balance())
 print()
+
+# Transfer
+x.transfer_money(z, 600)
+print(x.display_user_balance())
+print(z.display_user_balance())
