@@ -1,0 +1,30 @@
+from demo_app.models import *
+
+User_1 = User.objects.create(first_name = "Sean", last_name = "Prodi", email_address = "seanprodi@gmail.com", age = "28") 
+
+User_2 = User.objects.create(first_name = "Jessica", last_name = "Domingo", email_address = "jess@email.com", age = "29")
+
+User_3 = User.objects.create(first_name = "Parker", last_name = "Doggo", email_address = "parker@dog.com", age = "1")
+
+User1 = User.objects.get(id = 1)
+
+User2 = User.objects.get(id = 2)
+
+User3 = User.objects.get(id = 3)
+
+User.objects.all()
+
+User.objects.last()
+
+User.objects.first()
+
+User3.last_name = “Pancakes”
+
+User2.delete()
+
+for Users in User.objects.all():
+	print(Users.first_name)
+
+Users = User.objects.all()
+
+Users.order_by(“-created_at”)
