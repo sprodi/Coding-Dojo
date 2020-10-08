@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>All Shows</title>
+   {% load static %}
+   <link rel="stylesheet" href="{% static "css/all_shows.css" %}"> 
+</head>
+<body>
+   <div id="container">
+      <div id="header">
+         <h1>{{show.title}}</h1>
+         <a href="/shows">Go Back</a>
+      </div>
+      <div id="info">
+         <p><strong>Title:</strong> {{show.title}}</p>
+         <p><strong>Network:</strong> {{show.network}}</p>
+         <p><strong>Release Date:</strong> {{show.release_date}}</p>
+         <p><strong>Description:</strong> {{show.desc}}</p><br>
+      </div>
+      <div id="footer">
+         {% load tz %}
+         {% timezone "US/Pacific" %}
+         <p>Last Updated: {{show.updated_at}}</p>
+         {% endtimezone %}
+         <a href="/shows/{{show.id}}/edit">Edit Show</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/shows/{{show.id}}/destroy">Delete Show</a>
+      </div>
+   </div>
+</body>
+</html>
